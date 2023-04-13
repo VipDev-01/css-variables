@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Variables</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <div id="container">
+        <div id="parameters">
+            <div id="p1">
+                <label for="size" class="lbl lblsize">Adjust Size: </label>
+                <input type="range" name="size" class="input inpsize" value="200" min="200" max="500" data-suffix="px">
+            </div>
+
+            <div id="p2">
+                <label for="blur" class="lbl lblblur">Adjust Blur: </label>
+                <input type="range" name="blur" class="input inpblur" value="0" min="0" max="5" data-suffix="px">
+            </div>
+
+            <div id="p3">
+                <label for="bodyBG" class="lbl lblbodybg">Adjust Body Color: </label>
+                <input type="color" name="bodyBG" class="input inpbodybg" value="#ffffff">
+            </div>
+
+        </div>
+        <img src="kitty.jpeg" id="image">
+    </div>    
 </body>
 </html>
